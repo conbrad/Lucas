@@ -5,9 +5,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.show();
 
-	//conor test commit
+    //Maximizes to screen once app is started
+    w.showMaximized();
     
     return a.exec();
 }
