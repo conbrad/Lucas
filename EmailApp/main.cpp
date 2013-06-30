@@ -1,13 +1,12 @@
 #include "mainwindow.h"
+#include "IMAPClient.h"
 #include <QApplication>
+
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-
-	//conor test commit
-    
     return a.exec();
 }

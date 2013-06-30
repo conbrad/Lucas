@@ -4,8 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
+QT       += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = EmailApp
@@ -13,8 +12,19 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    IMAPParser.cpp \
+    IMAPConnection.cpp \
+    IMAPClient.cpp \
+    Folder.cpp \
+    Email.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    IMAPTag.h \
+    IMAPParser.h \
+    IMAPConnection.h \
+    IMAPClient.h \
+    Folder.h \
+    Email.h
 
 FORMS    += mainwindow.ui
